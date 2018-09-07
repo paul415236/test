@@ -1,0 +1,9 @@
+--- ori.c	2018-09-07 19:06:14.010740521 +0800
++++ new.c	2018-09-07 19:06:32.499038978 +0800
+@@ -3,5 +3,6 @@
+ int main(int argc, char **argv)
+ {
+     printf("hello world. \n");
++    printf("bye. \n");
+     return 0;
+ }

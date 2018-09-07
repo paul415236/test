@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+	echo "__do_patch <patch>"
+	exit
+fi
+  
+patch < $1

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ $# -ne 3 ]; then
+	echo "__make_path <old> <new> <patch>"
+	exit
+fi
+  
+diff -Naur $1 $2 > $3
