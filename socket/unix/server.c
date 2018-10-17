@@ -4,6 +4,8 @@
 #include <sys/un.h>
 #include <stdlib.h>
 
+
+
 char *socket_path = "/tmp/socket";
 
 int main() {
@@ -18,7 +20,7 @@ int main() {
     perror("socket error");
     exit(-1);
   }
-
+  printf("11111 \n");
   unlink(socket_path);
 
   memset(&addr, 0, sizeof(addr));
