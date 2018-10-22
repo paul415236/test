@@ -23,6 +23,7 @@ int main() {
   printf("11111 \n");
   unlink(socket_path);
 
+  printf("222222222222 \n");
   memset(&addr, 0, sizeof(addr));
   addr.sun_family = AF_UNIX;
   strncpy(addr.sun_path, socket_path, sizeof(addr.sun_path)-1);
