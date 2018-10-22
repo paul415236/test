@@ -11,6 +11,7 @@ int main(int argc, char *argv[]) {
   char buf[100];
   int fd,rc;
 
+  printf("333333 \n");
   if ( (fd = socket(AF_UNIX, SOCK_STREAM, 0)) == -1) {
     perror("socket error");
     exit(-1);
